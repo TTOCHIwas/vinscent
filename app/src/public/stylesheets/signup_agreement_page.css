@@ -1,0 +1,276 @@
+.signup-agreement-frame {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 40px;
+    position: relative;
+    background-color: #ffffff;
+}
+
+.signup-agreement-frame  .signup-agreement {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.signup-agreement-frame .logo-and-lenguage {
+    display: flex;
+    height: 74px;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+}
+
+.signup-agreement-frame .logo {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.signup-agreement-frame  .logo-title {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Pretendard Variable-Black", Helvetica;
+    font-weight: 900;
+    color: #000000;
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 36px;
+    white-space: nowrap;
+}
+
+.signup-agreement-frame .slogan {
+    position: relative;
+    width: fit-content;
+    font-family: "Pretendard Variable-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 16.8px;
+}
+
+.signup-agreement-frame .lenguage {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.signup-agreement-frame .lenguage-select {
+    display: inline-flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    align-self: stretch;
+    flex: 0 0 auto;
+    border: none;
+
+    width: fit-content;
+    font-family: "Pretendard Variable-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 19.6px;
+    white-space: nowrap;
+}
+
+.signup-agreement-frame .agreement-frame {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.signup-agreement-frame .all-agree-frame {
+    display: flex;
+    align-items: flex-start;
+    gap: 4px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    overflow: hidden;
+}
+
+.signup-agreement-frame .check-square {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border: 1px solid;
+    border-color: #333333;
+}
+
+.signup-agreement-frame .all-agree-text {
+    display: flex;
+    flex-direction: column;
+    width: 417px;
+    align-items: flex-start;
+    gap: 10px;
+    position: relative;
+}
+
+.signup-agreement-frame .agreement-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 0px 0px 0px 24px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.signup-agreement-frame .agreement {
+    display: flex;
+    height: 20px;
+    align-items: center;
+    gap: 4px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+}
+
+.signup-agreement-frame .adult-agreement-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+}
+
+.signup-agreement-frame .agreement-text {
+    width: 100%;
+    font-family: "Pretendard Variable-Regular", Helvetica;
+    font-weight: 400;
+    color: #333333;
+    font-size: 14px;
+    line-height: 19.6px;
+    white-space: nowrap;
+    position: relative;
+    margin-top: -1.00px;
+    letter-spacing: 0;
+}
+
+.signup-agreement-frame .detail {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.signup-agreement-frame .detail:hover {
+    text-decoration: #333333 underline;
+}
+.signup-agreement-frame .next-button-frame {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 4px 0px;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.signup-agreement-frame .next-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 2px 2px 2px 0px;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: #fff;
+    cursor: pointer;
+    color: #000000;
+}
+
+.signup-agreement-frame .next-button :disabled, .signup-agreement-frame .next-button[disabled] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 2px 2px 2px 0px;
+    position: relative;
+    flex: 0 0 auto;
+    cursor: inherit;
+    color: #767676;
+}
+
+.signup-agreement-frame .next-button :disabled > .next-icon, .signup-agreement-frame .next-button[disabled] > .next-icon{
+    filter: invert(49%) sepia(0%) saturate(1165%) hue-rotate(252deg) brightness(93%) contrast(85%);
+}
+
+.signup-agreement-frame .next-text {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex: 0 0 auto;
+
+    align-self: stretch;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    position: relative;
+    margin-top: -1.00px;
+    letter-spacing: 0;
+}
+
+.agreement-checkbox{
+    width:20px;
+    height:20px;
+    accent-color:#333333;
+}
+
+.signup-agreement-frame .warning-text {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex: 0 0 auto;
+
+    align-self: stretch;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 16px;
+    position: relative;
+    margin-top: -1.00px;
+    letter-spacing: 0;
+}

@@ -1,0 +1,158 @@
+.property.property {
+    display: flex;
+    flex-direction: column;
+    width: 1920px;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+    background-color: #ffffff;
+}
+
+.property .frame {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 132px 0px 0px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.property .text-wrapper {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Pretendard Variable-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 40px;
+    letter-spacing: 0;
+    line-height: 56.0px;
+    white-space: nowrap;
+}
+
+.property .div {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.property .text-wrapper-2 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Pretendard Variable-Bold", Helvetica;
+    font-weight: 700;
+    color: #777777;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 28.0px;
+    white-space: nowrap;
+}
+
+.property .rectangle {
+    position: relative;
+    width: 1px;
+    height: 20px;
+    background-color: #777777;
+}
+
+.property .date {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 0px 10px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.property .element {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #777777;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 22.4px;
+    white-space: nowrap;
+}
+
+.property .image {
+    position: relative;
+    width: 1200px;
+    height: 600px;
+    box-shadow: 6px 7px 28px #00000040;
+    object-fit: cover;
+    background-position: 50% 50%;
+}
+
+.property .frame-2 {
+    display: flex;
+    align-items: flex-start;
+    gap: 100px;
+    padding: 0px 360px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.property .frame-3 {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    align-items: flex-start;
+    gap: 31px;
+    padding: 14px 0px;
+    position: relative;
+}
+
+.property .frame-4 {
+    display: inline-flex;
+    align-items: flex-end;
+    gap: 12px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.property .rectangle-2 {
+    position: relative;
+    align-self: stretch;
+    width: 1px;
+    background-color: #000000;
+}
+
+.property .SPATE {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 28.0px;
+}
+
+.property .SNS-google-DISCOVERY {
+    position: relative;
+    align-self: stretch;
+    font-family: "Pretendard Variable-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 22.4px;
+}
+
+.property .img {
+    position: relative;
+    width: 400px;
+    height: 514.67px;
+    object-fit: cover;
+}
+

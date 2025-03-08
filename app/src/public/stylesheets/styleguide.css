@@ -1,0 +1,37 @@
+:root {
+    --headertext: rgba(118, 118, 118, 1);
+
+    --searchbar: rgba(200, 200, 200, 1);
+
+    --subtitle-2-font-family: "Pretendard", Helvetica;
+    --subtitle-2-font-weight: 500;
+    --subtitle-2-font-size: 14px;
+    --subtitle-2-letter-spacing: 0px;
+    --subtitle-2-line-height: 139.9999976158142%;
+    --subtitle-2-font-style: normal;
+    --postinfobackground: rgba(53, 53, 53, 0.5);
+
+    --body-2-font-family: "Pretendard", Helvetica;
+    --body-2-font-weight: 400;
+    --body-2-font-size: 14px;
+    --body-2-letter-spacing: 0px;
+    --body-2-line-height: 139.9999976158142%;
+    --body-2-font-style: normal;
+
+    --usermenutextcolordefault: rgba(51, 51, 51, 1);
+
+    --usermenudark: rgba(118, 118, 118, 1);
+    --usermenutextcolordark: rgba(218, 218, 218, 1);
+    
+    --variable-collection-signin-error-text-color: rgba(204, 0, 0, 1);
+
+    --variable-collection-male: rgba(0, 66, 208, 1);
+    --variable-collection-unisex: rgba(145, 0, 229, 1);
+    --variable-collection-female: rgba(229, 0, 0, 1);
+
+    --deepgray: rgba(51, 51, 51, 1);
+
+    --foottextcolor: rgba(122, 122, 122, 1);
+    --blackmod: rgba(34, 34, 34, 1);
+}
+

@@ -1,0 +1,413 @@
+.home-resent-post {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 21px 90px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 1.0);
+    background: radial-gradient(
+        50% 50% at 50% 50%,
+        rgb(163, 142, 121) 24%,
+        rgb(125, 99, 74) 90.5%
+    );
+}
+
+.home-resent-post .div {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    align-items: flex-start;
+    gap: 20px;
+    position: relative;
+}
+
+.home-resent-post .div-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.home-resent-post .text-wrapper {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Pretendard Variable-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 36px;
+    letter-spacing: 0;
+    line-height: 50.4px;
+    white-space: nowrap;
+}
+
+.home-resent-post .div-2 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.home-resent-post .div-3 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.home-resent-post .text-wrapper-2 {
+    font-family: "Pretendard Variable-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 15px;
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-size: 16px;
+    letter-spacing: 0;
+    white-space: nowrap;
+}
+
+.home-resent-post .rectangle {
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff;
+}
+
+.home-resent-post .all {
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #a6a6a6;
+    line-height: 20px;
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-size: 16px;
+    letter-spacing: 0;
+    white-space: nowrap;
+}
+
+.home-resent-post .image-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 24px 24px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.home-resent-post .image {
+    display: flex;
+    flex-direction: column;
+    width: 282px;
+    height: 456.28px;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    position: relative;
+    background-image: url(./img/image.png);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.home-resent-post .frame {
+    display: flex;
+    flex-direction: column;
+    height: 1px;
+    align-items: flex-end;
+    gap: 10px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    overflow: hidden;
+    backdrop-filter: blur(13px) brightness(100%);
+    -webkit-backdrop-filter: blur(13px) brightness(100%);
+}
+
+.home-resent-post .comment-frame {
+    display: flex;
+    max-height: 414px;
+    align-items: flex-start;
+    gap: 4px;
+    padding: 4px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.home-resent-post .rectangle-wrapper {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    flex: 0 0 auto;
+    overflow: hidden;
+}
+
+.home-resent-post .img {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin-top: -6352.55px;
+    margin-left: -1699.00px;
+    object-fit: cover;
+}
+
+.home-resent-post .comment {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+}
+
+.home-resent-post .comment-nicanddate {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.home-resent-post .text-wrapper-3 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 19.6px;
+    white-space: nowrap;
+}
+
+.home-resent-post .date {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.home-resent-post .text-wrapper-4 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #d2d2d2;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 16.8px;
+    white-space: nowrap;
+}
+
+.home-resent-post .comment-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.home-resent-post .text-wrapper-5 {
+    position: relative;
+    flex: 1;
+    margin-top: -1.00px;
+    font-family: "Pretendard Variable-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 19.6px;
+}
+
+.home-resent-post .likeandcomment-wrapper {
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    height: 32px;
+}
+
+.home-resent-post .likeandcomment {
+    display: flex;
+    width: 237px;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 4px 0px;
+    position: relative;
+    left: 22px;
+}
+
+.home-resent-post .frame-2 {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    position: relative;
+    flex: 0 0 auto;
+    overflow: hidden;
+}
+
+.home-resent-post .iconex-post-default {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    margin-top: -6410.55px;
+    margin-left: -1736.00px;
+}
+
+.home-resent-post .text-wrapper-6 {
+    position: relative;
+    width: fit-content;
+    font-family: "Pretendard Variable-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 16.8px;
+    white-space: nowrap;
+}
+
+.home-resent-post .frame-3 {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.home-resent-post .iconex {
+    position: relative;
+    width: 24px;
+    height: 24px;
+}
+
+.home-resent-post .message-square {
+    position: relative;
+    width: 20px;
+    height: 19px;
+    top: -6408px;
+    left: -1790px;
+    background-image: url(./img/union.svg);
+    background-size: 100% 100%;
+}
+
+.home-resent-post .dots {
+    position: relative;
+    width: 12px;
+    height: 2px;
+    top: 7px;
+    left: 4px;
+}
+
+.home-resent-post .ellipse {
+    left: 0;
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 0;
+    background-color: #ffffff;
+    border-radius: 1.25px;
+}
+
+.home-resent-post .ellipse-2 {
+    left: 5px;
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 0;
+    background-color: #ffffff;
+    border-radius: 1.25px;
+}
+
+.home-resent-post .ellipse-3 {
+    left: 10px;
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 0;
+    background-color: #ffffff;
+    border-radius: 1.25px;
+}
+
+.home-resent-post .tag {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    margin-top: -6410.55px;
+    margin-left: -1848.00px;
+}
+
+.home-resent-post .frame-4 {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    flex: 0 0 auto;
+    overflow: hidden;
+}
+
+.home-resent-post .share {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    margin-top: -6410.55px;
+    margin-left: -1904.00px;
+}
+
+.home-resent-post .loadmore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 31px 900px 0px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.home-resent-post .load-more {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    flex: 0 0 auto;
+    margin-left: -337.50px;
+    margin-right: -337.50px;
+}
+
+.home-resent-post .text-wrapper-7 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Pretendard Variable-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 22.4px;
+    white-space: nowrap;
+}

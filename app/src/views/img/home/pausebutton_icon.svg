@@ -1,0 +1,6 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="pausebutton">
+<rect width="16" height="16" rx="8" fill="black" fill-opacity="0.3"/>
+<path id="pause_icon" d="M7 10V6M9.5 10V6" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

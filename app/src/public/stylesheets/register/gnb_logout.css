@@ -1,0 +1,111 @@
+.case-gnb-logout {
+    position: relative;
+    width: 1920px;
+    height: 52px;
+    background-color: #ffffffcc;
+}
+
+.case-gnb-logout .title {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 4px;
+    left: 40px;
+}
+
+.case-gnb-logout .text-wrapper {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Pretendard Variable-Black", Helvetica;
+    font-weight: 900;
+    color: #000000;
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 44.8px;
+    white-space: nowrap;
+}
+
+.case-gnb-logout .menu {
+    display: inline-flex;
+    height: 52px;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 60px;
+    padding: 0px 20px;
+    position: absolute;
+    top: 0;
+    left: 220px;
+}
+
+.case-gnb-logout .gnb-category-element {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.case-gnb-logout .ex {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Pretendard-Medium", Helvetica;
+    font-weight: 500;
+    color: var(--headertext);
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.case-gnb-logout .sign {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 16px;
+    position: absolute;
+    top: 10px;
+    left: 1698px;
+}
+
+.case-gnb-logout .login-button {
+    background-color: #333333;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 6px 20px;
+    position: relative;
+    flex: 0 0 auto;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.case-gnb-logout .sign-text {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 19.6px;
+    white-space: nowrap;
+}
+
+.case-gnb-logout .sign-up-button {
+    background-color: #a47864;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 6px 20px;
+    position: relative;
+    flex: 0 0 auto;
+    border-radius: 6px;
+    overflow: hidden;
+}

@@ -1,0 +1,167 @@
+.foot {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.foot .rectangle {
+    position: absolute;
+    width: 1200px;
+    height: 2px;
+    top: 24px;
+    left: 346px;
+    background-color: #000000;
+}
+
+.foot .foot-content {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 0px 16px;
+    position: absolute;
+    top: 48px;
+    left: 346px;
+    background-color: #ffffff;
+}
+
+.foot .title {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.foot .text-wrapper {
+    width: fit-content;
+    font-family: "Pretendard Variable-Black", Helvetica;
+    font-weight: 900;
+    font-size: 40px;
+    text-align: center;
+    line-height: 56.0px;
+    white-space: nowrap;
+    position: relative;
+    margin-top: -1.00px;
+    color: #7a7a7a;
+    letter-spacing: 0;
+}
+
+.foot .view {
+    position: relative;
+    width: 1px;
+    height: 52px;
+    background-color: #7a7a7a;
+    transform: rotate(180deg);
+}
+
+.foot .blending-scents {
+    position: relative;
+    width: fit-content;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #7a7a7a;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 19.6px;
+}
+
+.foot .vinscent-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 0px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.foot .vinscent {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #7a7a7a;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 19.6px;
+}
+
+.foot .foor-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.foot .ceointro {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.foot .div {
+    align-self: stretch;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19.6px;
+    position: relative;
+    margin-top: -1.00px;
+    color: #7a7a7a;
+    letter-spacing: 0;
+}
+
+.foot .ceointro-sns {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 0px 9px;
+    display: inline-flex;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.foot .div-2 {
+    align-items: center;
+    gap: 7px;
+    display: inline-flex;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.foot .img {
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+
+.foot .text-wrapper-2 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #7a7a7a;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 19.6px;
+    white-space: nowrap;
+}
+
+.foot .group {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-image: url(./img/youtube-icon.svg);
+    background-size: 100% 100%;
+}

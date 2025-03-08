@@ -1,0 +1,230 @@
+.home-herobanner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.home-herobanner .div {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.home-herobanner .div-2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.home-herobanner .blending-scents {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Pretendard-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 36px;
+    letter-spacing: 0;
+    line-height: 50.4px;
+}
+
+.home-herobanner .frame {
+    display: inline-flex;
+    gap: 10px;
+    padding: 4px 0px 0px;
+    flex: 0 0 auto;
+    align-items: center;
+    position: relative;
+}
+
+.home-herobanner .rectangle {
+    position: relative;
+    width: 520px;
+    height: 44px;
+    background-color: #d9d9d9;
+    border: 1px solid;
+    border-color: #dddddd;
+}
+
+.home-herobanner .search {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 14px;
+    left: 10px;
+}
+
+.home-herobanner .text-wrapper {
+    position: absolute;
+    width: 228px;
+    height: 22px;
+    top: 14px;
+    left: 44px;
+    font-family: "Pretendard-Bold", Helvetica;
+    font-weight: 700;
+    color: #767676eb;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 22.4px;
+}
+
+.home-herobanner .div-3 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 30px 0px 20px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.home-herobanner .img {
+    position: relative;
+    width: 1213px;
+    height: 611px;
+    margin-bottom: -11.00px;
+    margin-right: -13.00px;
+}
+
+.home-herobanner .div-4 {
+    position: absolute;
+    width: 433px;
+    height: 137px;
+    top: 61px;
+    left: 719px;
+}
+
+.home-herobanner .text-wrapper-2 {
+    position: absolute;
+    height: 90px;
+    top: -1px;
+    left: 0;
+    font-family: "Pretendard-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 64px;
+    text-align: right;
+    letter-spacing: 0;
+    line-height: 89.6px;
+    white-space: nowrap;
+}
+
+.home-herobanner .p {
+    position: absolute;
+    height: 40px;
+    top: 96px;
+    left: 198px;
+    font-family: var(--subtitle-2-font-family);
+    font-weight: var(--subtitle-2-font-weight);
+    color: #ffffff;
+    font-size: var(--subtitle-2-font-size);
+    text-align: right;
+    letter-spacing: var(--subtitle-2-letter-spacing);
+    line-height: var(--subtitle-2-line-height);
+    font-style: var(--subtitle-2-font-style);
+}
+
+.home-herobanner .div-5 {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.home-herobanner .div-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 16px;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    position: relative;
+}
+
+.home-herobanner .text-wrapper-3 {
+    align-self: stretch;
+    color: #000000;
+    position: relative;
+    margin-top: -1.00px;
+    font-family: "Pretendard-Medium", Helvetica;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: right;
+    letter-spacing: 0;
+    line-height: 14px;
+}
+
+.home-herobanner .frame-2 {
+    display: inline-flex;
+    gap: 2px;
+    flex: 0 0 auto;
+    align-items: center;
+    position: relative;
+}
+
+.home-herobanner .rectangle-2 {
+    position: relative;
+    width: 34px;
+    height: 2px;
+    background-color: #000000;
+    border-radius: 2px;
+}
+
+.home-herobanner .rectangle-3 {
+    position: relative;
+    width: 34px;
+    height: 2px;
+    background-color: var(--headertext);
+    border-radius: 2px;
+}
+
+.home-herobanner .frame-3 {
+    display: flex;
+    flex-direction: column;
+    width: 16px;
+    justify-content: center;
+    gap: 10px;
+    overflow: hidden;
+    align-items: center;
+    position: relative;
+}
+
+.home-herobanner .text-wrapper-4 {
+    width: fit-content;
+    margin-left: -1.00px;
+    margin-right: -1.00px;
+    color: #333333;
+    white-space: nowrap;
+    position: relative;
+    margin-top: -1.00px;
+    font-family: "Pretendard-Medium", Helvetica;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: right;
+    letter-spacing: 0;
+    line-height: 14px;
+}
+
+.home-herobanner .pause {
+    position: relative;
+    width: 16px;
+    height: 16px;
+}
+
+.home-herobanner .home-herobanner-card {
+    position: absolute;
+    width: 1112px;
+    height: 50px;
+    top: 453px;
+    left: 404px;
+}

@@ -1,0 +1,196 @@
+.post-poup-page-frame {
+    display: flex;
+    width: 420px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    background-color: #ffffff;
+}
+
+.post-poup-page-frame .post-popup-page {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+}
+
+.post-poup-page-frame .userprofileanddate {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.post-poup-page-frame .userprofile-image {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 22px;
+    background-image: url(./img/userprofile-image.png);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.post-poup-page-frame .userprofile-nicname {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.post-poup-page-frame .nicname {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 19.6px;
+    white-space: nowrap;
+}
+
+.post-poup-page-frame .div {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.post-poup-page-frame .post-popup-iconex {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 2px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.post-poup-page-frame .time-circle {
+    position: relative;
+    width: 14px;
+    height: 14px;
+}
+
+.post-poup-page-frame .overlap-group {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    top: -1px;
+    left: -1px;
+    border-radius: 7.75px;
+    border: 1.5px solid;
+    border-color: #7a7a7a;
+}
+
+.post-poup-page-frame .vector {
+    position: absolute;
+    width: 4px;
+    height: 6px;
+    top: 3px;
+    left: 6px;
+}
+
+.post-poup-page-frame .text-wrapper {
+    width: fit-content;
+    margin-top: -0.50px;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #7a7a7a;
+    font-size: 12px;
+    line-height: 16.8px;
+    white-space: nowrap;
+    position: relative;
+    letter-spacing: 0;
+}
+
+.post-poup-page-frame .more-button {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 3px;
+    left: 376px;
+}
+
+.post-poup-page-frame .div-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.post-poup-page-frame .p {
+    align-self: stretch;
+    margin-top: -1.00px;
+    font-family: "Pretendard Variable-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 14px;
+    line-height: 19.6px;
+    position: relative;
+    letter-spacing: 0;
+}
+
+.post-poup-page-frame .post-image {
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    background-image: url(./img/post-image.png);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.post-poup-page-frame .likeandcomment-frame {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 4px 4px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.post-poup-page-frame .likeandcomment {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 20px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.post-poup-page-frame .img {
+    position: relative;
+    width: 24px;
+    height: 24px;
+}
+
+.post-poup-page-frame .text-wrapper-2 {
+    position: relative;
+    width: fit-content;
+    font-family: "Pretendard Variable-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 16.8px;
+    white-space: nowrap;
+}

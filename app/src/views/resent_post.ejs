@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="post-banner.css" />
+</head>
+<body>
+    <div class="resent-post-container-frame">
+        <div class="post-content-container">
+            <div class="text-wrapper"><div class="content-title-white">RESENT POST</div></div>
+            <div class="post-category-list">
+                <div class="post-category">
+                    <input class="category-radio" type='radio' name='resent-post-category' id='resent-post-all' value='resent-post-all' checked="checked"/>
+                    <label for="resent-post-all">all</label>
+                </div>
+                <div class="post-category">
+                    <input class="category-radio" type='radio' name='resent-post-category' id='resent-post-fashion' value='resent-post-fashion'/>
+                    <label for="resent-post-fashion">fashion</label>
+                </div>
+                <div class="post-category">
+                    <input class="category-radio" type='radio' name='resent-post-category' id='resent-post-mood' value='resent-post-mood'/>
+                    <label for="resent-post-mood">mood</label>
+                </div>
+                <div class="post-category">
+                    <input class="category-radio" type='radio' name='resent-post-category' id='resent-post-unique' value='resent-post-unique'/>
+                    <label for="resent-post-unique">unique</label>
+                </div>
+                <div class="post-category">
+                    <input class="category-radio" type='radio' name='resent-post-category' id='resent-post-brand' value='resent-post-brand'/>
+                    <label for="resent-post-brand">brand</label>
+                </div>
+            </div>
+            <div class="post-list-frame">
+                <div class="post">
+                    <div class="post-info-frame">
+                        <div class="post-info">
+                            <div class="user-profile"><div class="user-image" style="background-color: gray;"></div></div>
+                            <div class="post-nicnameandtext">
+                                <div class="content-nicanddate">
+                                    <div class="text-wrapper"><div class="text-userid">user_id</div></div>
+                                    <div class="createdate-frame"><div class="createdate">2주 전</div></div>
+                                </div>
+                                <div class="post-content-frame"><div class="post-content">post text</div></div>
+                            </div>
+                        </div>
+                        <div class="post-menu-frame">
+                            <div class="post-menu">
+                                <div class="post-menu-element">
+                                    <svg class="like-icon" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.66275 14.3028L11.3708 20.5423C11.7377 20.8393 12.2623 20.8393 12.6292 20.5423L20.3372 14.3028C22.5542 11.8433 22.5543 7.85578 20.3373 5.39634C18.1203 2.9369 14.5258 2.9369 12.3088 5.39634V5.39634C12.1437 5.57951 11.8563 5.57951 11.6912 5.39634V5.39634C9.47421 2.9369 5.87975 2.9369 3.66275 5.39634C1.44575 7.85578 1.44575 11.8433 3.66275 14.3028Z" stroke="white" stroke-width="1.5"/>
+                                    </svg>
+                                    <div class="like-count">0</div>
+                                </div>
+                                <div class="post-menu-element">
+                                    <svg class="comment-icon" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 4.30176C4.65279 4.30176 2.75 6.20455 2.75 8.55176V21.4711C2.75 21.6808 2.99248 21.7973 3.15617 21.6663L5.98365 19.4044C6.47126 19.0143 7.07712 18.8018 7.70156 18.8018H17C19.3472 18.8018 21.25 16.899 21.25 14.5518V8.55176C21.25 6.20455 19.3472 4.30176 17 4.30176H7ZM1.25 8.55176C1.25 5.37612 3.82436 2.80176 7 2.80176H17C20.1756 2.80176 22.75 5.37612 22.75 8.55176V14.5518C22.75 17.7274 20.1756 20.3018 17 20.3018H7.70156C7.41772 20.3018 7.14233 20.3984 6.92069 20.5757L4.09322 22.8377C2.94738 23.7543 1.25 22.9385 1.25 21.4711V8.55176Z" fill="white"/>
+                                        <path d="M8.29999 11.6016C8.29999 12.2919 7.74034 12.8516 7.04999 12.8516C6.35963 12.8516 5.79999 12.2919 5.79999 11.6016C5.79999 10.9112 6.35963 10.3516 7.04999 10.3516C7.74034 10.3516 8.29999 10.9112 8.29999 11.6016Z" fill="white"/>
+                                        <path d="M13.3 11.6016C13.3 12.2919 12.7403 12.8516 12.05 12.8516C11.3596 12.8516 10.8 12.2919 10.8 11.6016C10.8 10.9112 11.3596 10.3516 12.05 10.3516C12.7403 10.3516 13.3 10.9112 13.3 11.6016Z" fill="white"/>
+                                        <path d="M18.3 11.6016C18.3 12.2919 17.7403 12.8516 17.05 12.8516C16.3596 12.8516 15.8 12.2919 15.8 11.6016C15.8 10.9112 16.3596 10.3516 17.05 10.3516C17.7403 10.3516 18.3 10.9112 18.3 11.6016Z" fill="white"/>
+                                    </svg>
+                                    <div class="comment-count">0</div>
+                                </div>
+                                <div class="post-menu-element">
+                                    <svg class="tag-icon"  width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.6401 8.51094L15.6337 8.51135M18.466 3.50051L12.6487 3.46003C12.1329 3.45644 11.6413 3.67841 11.303 4.06766L2.56314 14.1217C1.92298 14.8581 2.00102 15.974 2.73744 16.6142L9.4045 22.4098C10.1409 23.05 11.2569 22.9719 11.897 22.2355L20.6369 12.1815C20.9752 11.7922 21.1266 11.2745 21.0513 10.7643L20.2016 5.0092C20.0743 4.14711 19.3374 3.50658 18.466 3.50051Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <div class="tag-count">0</div>
+                                </div>
+                                <div class="share">
+                                    <svg class="share-icon"  width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22 11.6173L11.3334 4.55176L11.3334 8.55172C2 10.5517 2 19.8849 2 19.8849C2 19.8849 5.99996 14.5517 11.3334 15.2183L11.3334 19.3516L22 11.6173Z" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+                                    </svg>
+                                    <div class="share-count">0</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="loadmore-frame">
+                <div class="loadmore"><a class="loadmore-text" href="">load more</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

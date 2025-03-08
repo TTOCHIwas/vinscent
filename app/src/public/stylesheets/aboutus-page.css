@@ -1,0 +1,174 @@
+.aboutus-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 40px;
+    position: relative;
+    background-color: #ffffff;
+}
+.aboutus-page .frame {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding: 150px 0px 200px;
+    position: relative;
+    flex: 0 0 auto;
+}
+.aboutus-page .logo-frame {
+    display: inline-flex;
+    align-items: end;
+    gap: 14px;
+}
+
+.aboutus-page .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    flex: 0 0 auto;
+}
+.aboutus-page .logo-text {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Pretendard Variable-Black", Helvetica;
+    font-weight: 900;
+    color: #000000;
+    font-size: 48px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 42px;
+    white-space: nowrap;
+}
+
+.aboutus-page .logo-divier {
+    position: relative;
+    align-self: stretch;
+    width: 2px;
+    background-color: #000000;
+}
+
+.aboutus-page .slogan {
+    position: relative;
+    width: fit-content;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 19.6px;
+}
+
+.aboutus-page .text-1 {
+    position: relative;
+    align-self: stretch;
+    font-family: "Pretendard-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 26px;
+    text-align: left;
+}
+
+.aboutus-page .text-2 {
+    position: relative;
+    align-self: stretch;
+    font-family: "Pretendard-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 26px;
+    text-align: right;
+}
+
+.aboutus-page .text-3-frame {
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: auto;
+    gap:6px;
+}
+
+.aboutus-page .text-subtitle {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Pretendard-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 26px;
+    white-space: nowrap;
+}
+.aboutus-page .text-subtitle-2 {
+    position: relative;
+    margin-top: -1.00px;
+    font-family: "Pretendard-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 22px;
+    letter-spacing: 0;
+    line-height: 26px;
+    white-space: nowrap;
+    align-self: stretch;
+    text-align: right;
+}
+
+.aboutus-page .text-3 {
+    position: absolute;
+    width: 650px;
+    top: 65px;
+    left: 0;
+    font-family: "Pretendard-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 26px;
+}
+
+.aboutus-page .epilogue-frame {
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: auto;
+    gap:20px;
+}
+
+.aboutus-page .slogan-text {
+    position: relative;
+    width: 100%;
+    top: -1px;
+    left: 0;
+    font-family: "Pretendard-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 26px;
+}
+
+.aboutus-page .epilogue-text {
+    position: relative;
+    width: 100%;
+    font-family: "Pretendard-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 26px;
+}
+    

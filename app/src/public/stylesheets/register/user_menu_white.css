@@ -1,0 +1,122 @@
+.type-white {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 20px;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 1px;
+    overflow: hidden;
+}
+
+.type-white .mypage-element {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 10px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.type-white .img {
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.type-white .mypage {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.type-white .mypage-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.type-white .text-wrapper {
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19.6px;
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    color: #333333;
+    letter-spacing: 0;
+    white-space: nowrap;
+}
+
+.type-white .mypage-nicname {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.type-white .div {
+    font-family: "Pretendard Variable-Regular", Helvetica;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16.8px;
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    color: #333333;
+    letter-spacing: 0;
+    white-space: nowrap;
+}
+
+.type-white .darkmode-element {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.type-white .img-2 {
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+
+.type-white .div-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.type-white .text-wrapper-2 {
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19.6px;
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    color: var(--usermenutextcolordefault);
+    letter-spacing: 0;
+    white-space: nowrap;
+}
+
+.type-white .setting-element {
+    display: inline-flex;
+    height: 30px;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}

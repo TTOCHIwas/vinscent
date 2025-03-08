@@ -1,0 +1,296 @@
+.signup-enter {
+    display: flex;
+    flex-direction: column;
+    width: 508px;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 40px;
+    position: relative;
+    background-color: #ffffff;
+}
+
+.signup-enter .div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.signup-enter .signup-agreement {
+    display: flex;
+    height: 74px;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+}
+
+.signup-enter .logo {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.signup-enter .text-wrapper {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Pretendard Variable-Black", Helvetica;
+    font-weight: 900;
+    color: #000000;
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 36px;
+    white-space: nowrap;
+}
+
+.signup-enter .blending-scents {
+    position: relative;
+    width: fit-content;
+    font-family: "Pretendard Variable-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 16.8px;
+}
+
+.signup-enter .lenguage {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 4px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.signup-enter .img {
+    position: relative;
+    width: 24px;
+    height: 24px;
+}
+
+.signup-enter .lenguage-select {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    align-self: stretch;
+    flex: 0 0 auto;
+}
+
+.signup-enter .text-wrapper-2 {
+    position: relative;
+    width: fit-content;
+    font-family: "Pretendard Variable-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 19.6px;
+    white-space: nowrap;
+}
+
+.signup-enter 
+
+.signup-enter .div-wrapper {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.signup-enter .enter-frame {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    background-color: #ffffff;
+    border: 1px solid;
+    border-color: #777777;
+
+    margin-top: -1.00px;
+    font-family: "Pretendard Variable-Regular", Helvetica;
+    font-weight: 400;
+    color: #333333;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 19.6px;
+    white-space: nowrap;
+}
+
+.signup-enter .element-text {
+    width: fit-content;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 14px;
+    line-height: 19.6px;
+    white-space: nowrap;
+    position: relative;
+    margin-top: -1.00px;
+    letter-spacing: 0;
+}
+
+.signup-enter .userid-frame {
+    display: flex;
+    align-items: center;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.signup-enter .id-enter-frame {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+    background-color: #ffffff;
+    border: 1px solid;
+    border-color: #777777;
+}
+
+.signup-enter .text-wrapper-4 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Pretendard Variable-Regular", Helvetica;
+    font-weight: 400;
+    color: #333333;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 19.6px;
+    white-space: nowrap;
+}
+
+.signup-enter .id-err-frame {
+    position: relative;
+    width: fit-content;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: var(--variable-collection-signin-error-text-color);
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 19.6px;
+    white-space: nowrap;
+}
+
+.signup-enter .div-wrapper-2 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.signup-enter .div-wrapper-3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+    background-color: #ffffff;
+    border: 1px solid;
+    border-color: #777777;
+}
+
+.signup-enter .password-err-frame {
+    position: relative;
+    width: fit-content;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #cc0000;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 19.6px;
+    white-space: nowrap;
+}
+
+.signup-enter .text-wrapper-5 {
+    width: fit-content;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #cc0000;
+    font-size: 14px;
+    line-height: 19.6px;
+    white-space: nowrap;
+    position: relative;
+    margin-top: -1.00px;
+    letter-spacing: 0;
+}
+
+.signup-enter .next-button-frame {
+    display: flex;
+    height: 34px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 4px 0px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+}
+
+.signup-enter .next-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 2px 2px 2px 0px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.signup-enter .next-text {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.signup-enter .text-wrapper-6 {
+    align-self: stretch;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 16px;
+    line-height: 16px;
+    position: relative;
+    margin-top: -1.00px;
+    letter-spacing: 0;
+}
+
+.signup-enter .next-icon {
+    position: relative;
+    width: 10px;
+    height: 18px;
+    margin-top: -1.00px;
+    margin-bottom: -1.00px;
+    margin-right: -1.00px;
+}

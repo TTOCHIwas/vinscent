@@ -1,0 +1,407 @@
+.best-post-container-frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0px 20px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    background: radial-gradient(
+        50% 50% at 50% 50%,
+        rgb(130.69, 82.33, 50.1) 24%,
+        rgb(48, 30, 18) 90.5%
+    );
+}
+
+.resent-post-container-frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0px 20px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    background: radial-gradient(
+        50% 50% at 50% 50%,
+        rgb(163, 142, 121) 24%,
+        rgb(125, 99, 74) 90.5%
+    );
+}
+
+
+.post-content-container {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    align-items: flex-start;
+    gap: 20px;
+    position: relative;
+}
+
+.content-title-white {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Pretendard Variable-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 36px;
+    letter-spacing: 0;
+    line-height: 50.4px;
+    white-space: nowrap;
+}
+
+.post-category-list {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+
+.post-category-list .post-category {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    flex: 0 0 auto;
+
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #e0e0e0;
+    line-height: 14px;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-size: 16px;
+    letter-spacing: 0;
+    white-space: nowrap;
+}
+
+
+.post-category-list .category-radio+label{
+    text-decoration-line : none;
+    color: inherit;
+}
+
+.post-category-list .category-radio{
+    display: none;
+}
+
+
+.post-category-list .category-radio+label:hover, .post-category-list .category-radio:checked+label{
+    text-decoration-line : none;
+    color: #ffffff;
+}
+
+.post-category-list .category-radio+label:after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.1s, -webkit-transform 0.1s;
+    -moz-transition: opacity 0.1s, -moz-transform 0.1s;
+    transition: opacity 0.1s, transform 0.1s;
+    -webkit-transform: translateY(4px);
+    -moz-transform: translateY(4px);
+    transform: translateY(4px);
+}
+
+.post-category-list .category-radio+label:hover:after, .post-category-list .category-radio+label:focus:after, .post-category-list .category-radio:checked+label:after{
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
+}
+
+.post-list-frame {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 24px 24px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    width: 282px;
+    height: 456.28px;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    position: relative;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.post-info-frame {
+    display: flex;
+    flex-direction: column;
+    height: 1px;
+    align-items: flex-end;
+    gap: 10px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    overflow: hidden;
+    backdrop-filter: blur(13px) brightness(100%);
+    -webkit-backdrop-filter: blur(13px) brightness(100%);
+}
+
+.post-info {
+    display: flex;
+    max-height: 414px;
+    align-items: flex-start;
+    gap: 4px;
+    padding: 4px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.user-profile {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    flex: 0 0 auto;
+    overflow: hidden;
+}
+
+.user-image {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 0;
+    background-repeat : no-repeat; 
+    background-position : center;
+    background-position: 50% 50%;
+}
+
+.post-nicnameandtext {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+}
+
+.content-nicanddate {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.text-userid {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 19.6px;
+    white-space: nowrap;
+}
+
+.post-content-frame {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.post-content {
+    position: relative;
+    flex: 1;
+    margin-top: -1.00px;
+    font-family: "Pretendard Variable-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 19.6px;
+}
+
+.post-menu-frame {
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    height: 32px;
+}
+
+.post-menu {
+    display: flex;
+    width: 237px;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 4px 0px;
+    position: relative;
+    left: 22px;
+}
+
+.post-menu-element {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    position: relative;
+    flex: 0 0 auto;
+    overflow: hidden;
+}
+
+.like-icon {
+    margin-bottom: -7418.33px;
+    position: relative;
+    width: 20px;
+    height: 17.21px;
+    margin-left: -14821.53px;
+}
+
+.like-count {
+    position: relative;
+    width: fit-content;
+    margin-top: -0.89px;
+    font-family: "Pretendard Variable-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 16.8px;
+    white-space: nowrap;
+}
+
+.comment-icon {
+    margin-bottom: -7419.18px;
+    position: relative;
+    width: 20px;
+    height: 18.92px;
+    margin-left: -14873.53px;
+}
+
+.comment-count {
+    position: relative;
+    width: fit-content;
+    margin-top: -0.04px;
+    font-family: "Pretendard Variable-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 16.8px;
+    white-space: nowrap;
+}
+
+.tag-icon {
+    margin-bottom: -7419.42px;
+    position: relative;
+    width: 18.94px;
+    height: 19.38px;
+    margin-left: -14925.53px;
+}
+
+.tag-count {
+    position: relative;
+    width: fit-content;
+    font-family: "Pretendard Variable-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 16.8px;
+    white-space: nowrap;
+}
+
+.share {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    flex: 0 0 auto;
+    overflow: hidden;
+}
+
+.share-icon {
+    margin-bottom: -7417.39px;
+    position: relative;
+    width: 20px;
+    height: 15.33px;
+    margin-left: -14976.47px;
+}
+
+.share-count {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Pretendard Variable-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 16.8px;
+    white-space: nowrap;
+}
+
+.loadmore-frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 31px 0px 0px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.loadmore {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    flex: 0 0 auto;
+    margin-left: -337.50px;
+    margin-right: -337.50px;
+}
+
+.loadmore-text {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Pretendard Variable-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 22.4px;
+    white-space: nowrap;
+    text-decoration: none;
+}
+

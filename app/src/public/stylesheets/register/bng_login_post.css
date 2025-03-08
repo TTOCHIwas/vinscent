@@ -1,0 +1,98 @@
+.case-gnb-login-post {
+    position: relative;
+    width: 1920px;
+    height: 52px;
+    background-color: #ffffffcc;
+}
+
+.case-gnb-login-post .title {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 4px;
+    left: 40px;
+}
+
+.case-gnb-login-post .text-wrapper {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Pretendard Variable-Black", Helvetica;
+    font-weight: 900;
+    color: #000000;
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 44.8px;
+    white-space: nowrap;
+}
+
+.case-gnb-login-post .frame {
+    display: inline-flex;
+    justify-content: center;
+    top: 6px;
+    left: 1710px;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+}
+
+.case-gnb-login-post .img {
+    position: relative;
+    width: 50px;
+    height: 40px;
+}
+
+.case-gnb-login-post .commend-profile {
+    display: flex;
+    width: 50px;
+    height: 40px;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.case-gnb-login-post .comment-profile {
+    position: relative;
+    align-self: stretch;
+    width: 50px;
+    border-radius: 32px;
+    background-image: url(./img/comment-profile.png);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.case-gnb-login-post .div {
+    display: flex;
+    width: 520px;
+    height: 44px;
+    padding: 0px 10px;
+    top: 4px;
+    left: 938px;
+    background-color: var(--searchbar);
+    border-radius: 2px;
+    overflow: hidden;
+    border: 1px solid;
+    border-color: #f1f1f1;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+}
+
+.case-gnb-login-post .search {
+    position: relative;
+    width: 24px;
+    height: 24px;
+}
+
+.case-gnb-login-post .text-wrapper-2 {
+    position: relative;
+    flex: 1;
+    font-family: "Pretendard-Bold", Helvetica;
+    font-weight: 700;
+    color: #767676eb;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 22.4px;
+}

@@ -1,0 +1,438 @@
+.product-information {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
+    position: relative;
+}
+
+.product-information .div {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    flex: 0 0 auto;
+    overflow: hidden;
+}
+
+.product-information .product-image {
+    position: relative;
+    width: 220px;
+    height: 355.96px;
+    background-image: url(./img/product-image.png);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.product-information .div-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.product-information .product-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 9px 0px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.product-information .element-jefferson-hack {
+    position: relative;
+    flex: 1;
+    margin-top: -1.00px;
+    font-family: "Pretendard Variable-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 19.6px;
+}
+
+.product-information .div-2 {
+    display: flex;
+    flex-direction: column;
+    width: 930px;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 20px;
+    position: relative;
+    background-color: #ffffff;
+    box-shadow: inset 0px 0px 1.9px 1px #00000021;
+}
+
+.product-information .div-3 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.product-information .div-wrapper-2 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.product-information .text-wrapper {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 28.0px;
+    white-space: nowrap;
+}
+
+.product-information .text-wrapper-2 {
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22.4px;
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    color: #000000;
+    letter-spacing: 0;
+    white-space: nowrap;
+}
+
+.product-information .div-4 {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 4px 20px;
+    align-self: stretch;
+    width: 100%;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.product-information .div-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+}
+
+.product-information .div-6 {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.product-information .accordlist {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.product-information .text-wrapper-3 {
+    font-family: "Pretendard Variable-Regular", Helvetica;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19.6px;
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    color: #000000;
+    letter-spacing: 0;
+    white-space: nowrap;
+}
+
+.product-information .accordrange {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+}
+
+.product-information .element-range {
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    height: 22px;
+    background-color: #ffff00;
+    border-radius: 0px 2px 2px 0px;
+}
+
+.product-information .element-ndaccord-range {
+    display: flex;
+    flex-direction: column;
+    width: 232px;
+    align-items: flex-start;
+    gap: 10px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.product-information .element-rdaccord-range {
+    display: flex;
+    flex-direction: column;
+    width: 39px;
+    align-items: flex-start;
+    gap: 10px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.product-information .element-rd-range {
+    position: relative;
+    width: 39px;
+    height: 22px;
+    background-color: #ffff00;
+    border-radius: 0px 2px 2px 0px;
+}
+
+.product-information .div-7 {
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    height: 96px;
+}
+
+.product-information .note-frame {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.product-information .frame {
+    display: flex;
+    gap: 8px;
+    padding: 5px 4px;
+    align-self: stretch;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.product-information .note-information {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-top: -0.25px;
+}
+
+.product-information .text-wrapper-4 {
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19.6px;
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    color: #000000;
+    letter-spacing: 0;
+    white-space: nowrap;
+}
+
+.product-information .frame-2 {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 4px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.product-information .note-type-frame {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 0;
+    left: 114px;
+}
+
+.product-information .rectangle {
+    position: relative;
+    width: 2px;
+    height: 22px;
+    background-color: #d9d9d9;
+}
+
+.product-information .div-8 {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+    align-self: stretch;
+    width: 100%;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.product-information .div-9 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.product-information .text-wrapper-5 {
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    line-height: 22.4px;
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    color: #000000;
+    letter-spacing: 0;
+    white-space: nowrap;
+}
+
+.product-information .div-10 {
+    display: flex;
+    justify-content: center;
+    align-self: stretch;
+    width: 100%;
+    overflow: hidden;
+    align-items: flex-start;
+    gap: 10px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.product-information .season-list {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    align-self: stretch;
+    flex: 0 0 auto;
+}
+
+.product-information .div-11 {
+    display: inline-flex;
+    justify-content: center;
+    gap: 4px;
+    opacity: 0.75;
+    align-items: center;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.product-information .img {
+    position: relative;
+    width: 12px;
+    height: 12px;
+}
+
+.product-information .text-wrapper-6 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Pretendard Variable-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 16.8px;
+    white-space: nowrap;
+}
+
+.product-information .season-chart {
+    position: relative;
+    width: 200px;
+    height: 199.71px;
+}
+
+.product-information .div-12 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+}
+
+.product-information .div-13 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    align-self: stretch;
+    width: 100%;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.product-information .rectangle-2 {
+    position: relative;
+    width: 101px;
+    height: 55px;
+    background-color: #0041d0;
+    border-radius: 10px;
+}
+
+.product-information .rectangle-3 {
+    position: relative;
+    width: 119px;
+    height: 55px;
+    background-color: #9100e5;
+    border-radius: 10px;
+}
+
+.product-information .rectangle-4 {
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+    height: 55px;
+    background-color: #e50000;
+    border-radius: 10px;
+}
+
+.product-information .gender-list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}

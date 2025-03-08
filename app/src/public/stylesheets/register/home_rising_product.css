@@ -1,0 +1,141 @@
+.home-rising-product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 0px 90px;
+    position: relative;
+}
+
+.home-rising-product .rising-product {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+}
+
+.home-rising-product .rising-product-title {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: #ffffff;
+}
+
+.home-rising-product .text-wrapper {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Pretendard Variable-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 36px;
+    letter-spacing: 0;
+    line-height: 50.4px;
+    white-space: nowrap;
+}
+
+.home-rising-product .rising-product-list {
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    height: 335px;
+    overflow-x: scroll;
+}
+
+.home-rising-product .rising-product-list::-webkit-scrollbar {
+    width: 0;
+    display: none;
+}
+
+.home-rising-product .rising-product-wrapper {
+    display: inline-flex;
+    align-items: center;
+    gap: 24px;
+    position: relative;
+    overflow-x: scroll;
+}
+
+.home-rising-product .rising-product-wrapper::-webkit-scrollbar {
+    width: 0;
+    display: none;
+}
+
+.home-rising-product .overlap-group-wrapper {
+    position: relative;
+    width: 282px;
+    height: 334.88px;
+    overflow: hidden;
+}
+
+.home-rising-product .overlap-group {
+    position: relative;
+    height: 372px;
+}
+
+.home-rising-product .image {
+    position: absolute;
+    width: 282px;
+    height: 282px;
+    top: 0;
+    left: 0;
+    background-image: url(./img/image.png);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.home-rising-product .frame {
+    display: flex;
+    flex-direction: column;
+    width: 282px;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 16px;
+    position: absolute;
+    top: 260px;
+    left: 0;
+    background-color: #0000004c;
+    backdrop-filter: blur(13px) brightness(100%);
+    -webkit-backdrop-filter: blur(13px) brightness(100%);
+}
+
+.home-rising-product .div {
+    margin-top: -1.00px;
+    font-family: "Pretendard-Bold", Helvetica;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22.4px;
+    position: relative;
+    align-self: stretch;
+    color: #000000;
+    letter-spacing: 0;
+}
+
+.home-rising-product .text-wrapper-2 {
+    font-family: var(--subtitle-2-font-family);
+    font-weight: var(--subtitle-2-font-weight);
+    font-size: var(--subtitle-2-font-size);
+    line-height: var(--subtitle-2-line-height);
+    position: relative;
+    align-self: stretch;
+    color: #000000;
+    letter-spacing: var(--subtitle-2-letter-spacing);
+    font-style: var(--subtitle-2-font-style);
+}
+
+.home-rising-product .text-wrapper-3 {
+    font-family: var(--body-2-font-family);
+    font-weight: var(--body-2-font-weight);
+    font-size: var(--body-2-font-size);
+    line-height: var(--body-2-line-height);
+    position: relative;
+    align-self: stretch;
+    color: #000000;
+    letter-spacing: var(--body-2-letter-spacing);
+    font-style: var(--body-2-font-style);
+}
