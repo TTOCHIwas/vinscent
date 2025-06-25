@@ -1,7 +1,13 @@
-exports.loginChecker = (req, res, next) => {
-  if(req.isAuthenticated()){
-    next();
-  } else{
-    res.status(403).send('로그인 안 함');
-  }
+const render = {
+    login: (req, res) => {
+        res.render('./auth/login_page.ejs');
+    },
+    signup: (req, res) => {
+        res.render('./auth/signup_page.ejs');
+    }
 };
+
+const process = {
+};
+
+module.exports = { render, process };

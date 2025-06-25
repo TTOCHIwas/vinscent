@@ -1,4 +1,4 @@
-const db = require('../database.js');
+const db = require('../../database.js');
 
 exports.getUsers = (callback) => {
     db.query("SELECT * FROM user", (err, rows) => {
@@ -44,6 +44,18 @@ exports.getUsersBySearch = (input, callback) => {
     });
 };
 
+
+exports.findOne = (userId, callback) => {
+    db.query(`SELECT * FROM user WHERE user_id=${userId}`, (err, rows) => {
+        try{
+            console.log("사용자 정보 : ", rows);
+            callback(rows[0]);
+        }catch(err){
+            throw err;
+        }
+    });
+};
+
 exports.getUser = (userId, callback) => {
     db.query(`SELECT * FROM user WHERE user_id=${userId}`, (err, rows) => {
         try{
@@ -77,6 +89,18 @@ exports.postUser = (data, callback) => {
         }
     });
 };
+
+exports.postUserTerm = (data, callback) => {
+    db.query(`INSERT INTO user_term (user_id, term_id) VALUES ('${data.userId}', '${data.adalt}'), ('${data.userId}', '${data.store}'),('${data.userId}', '${data.marketing}'),('${data.userId}', '${data.ap}')`,
+    (err, rows) => {
+        try{
+            console.log("약관 수정 완료", rows);
+            callback(rows);
+        }catch{
+            throw err;
+        }
+    });
+}
 
 exports.deleteUser = (userId, callback) => {
     console.log("삭제 대상 아이디 : ", userId);

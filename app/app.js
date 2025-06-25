@@ -1,53 +1,48 @@
 const express = require('express');
+const session = require('express-session');
+const passport = require('passport');
+const passportConfig = require('./src/passport');
+
+const cookieParser = require('cookie-parser');
+
+require('dotenv').config();
+
+const home = require('./src/routes/home/home.js');
+const auth = require('./src/routes/auth/auth.js');
+const post = require('./src/routes/post/post.js');
+const product = require('./src/routes/product/product.js');
+const magazine = require('./src/routes/magazine/magazine.js');
+
+const path = require('path');
+
 const app = express();
-const auth = require('./routes/auth.js');
-const home = require('./src/routes/home');
+passportConfig();
 
+app.use(cookieParser(process.env.COOKIE_SECRET));
+app.use(
+    session({
+       resave: false,
+       saveUninitialized: false,
+       secret: process.env.COOKIE_SECRET,
+       cookie: {
+          httpOnly: true,
+          secure: false,
+       },
+    }),
+ );
 
-app.use(express.static(__dirname + '/src/public'));
+app.use(passport.initialize()); // 요청 객체에 passport 설정을 심음
+app.use(passport.session()); // req.session 객체에 passport정보를 추가 저장
+// passport.session()이 실행되면, 세션쿠키 정보를 바탕으로 해서 passport/index.js의 deserializeUser()가 실행하게 한다.
+
+app.use(express.static(`${__dirname}/src/public`));
+app.set('views', path.join(__dirname, './src/views'));
 app.set('view engine', 'ejs');
 
-app.use('/auth', require('./routes/auth.js'));
-
 app.use('/', home);
-
-app.get('/login', (req, res) =>{
-    res.render('login-page.ejs');
-})
-
-app.get('/signup', (req, res) =>{
-  res.render('signup-page.ejs');
-})
-
-app.get('/post-page', (req, res) =>{
-  res.render('post-board-page.ejs');
-})
-
-app.get('/product-page'), (req, res) =>{
-  res.render('product-board-page.ejs');
-}
-
-app.get('/product'), (req, res) =>{
-  res.render('product-page.ejs');
-}
-
-app.get('/aboutus'), (req, res) =>{
-  res.render('aboutus-page.ejs');
-}
-
-app.get('/magazine-page', (req, res) =>{
-  res.render('/magazine-board-page.ejs');
-})
-
-app.get('/magazine', (req, res) =>{
-  res.render('magazine-page.ejs');
-})
-
-app.get('/mypage/:id', (req, res) =>{
-  res.render('mypage.ejs');
-})
+app.use('/auth', auth);
+app.use('/post', post);
+app.use('/product', product);
+app.use('/magazine', magazine);
 
 module.exports = app;
-
-
-

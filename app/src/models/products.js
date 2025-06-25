@@ -1,4 +1,4 @@
-const db = require('../database.js');
+const db = require('../../database.js');
 
 exports.getProducts = (callback) => {
     db.query("SELECT * FROM product", (err, rows) => {

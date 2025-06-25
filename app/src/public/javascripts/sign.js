@@ -42,6 +42,8 @@ function checkedListen(checkbox){
 
 }
 
+
+
 function detailOn(agreement){
     const detail = document.getElementById(agreement);
     if(detail.style.visibility == 'hidden'){

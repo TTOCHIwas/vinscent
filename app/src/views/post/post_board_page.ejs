@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="/stylesheets/globals.css" />
+        <link rel="stylesheet" href="/stylesheets/styleguide.css" />
+        <link rel="stylesheet" href="/stylesheets/post-page.css" />
+    </head>
+    <body>
+        <script type="text/javascript" src="../../public/javascripts/post_board.js"></script>
+
+        <div clase="post-page">
+            <%- include('../gnb/gnb.ejs') %>
+            <div class="post-page-frame">
+                <div class="post-title-wrapper"><div class="post-title">POSTS</div></div>
+                <div class="post-category-and-sortby">
+                    <div class="post-category-list">
+                        <div class="post-category">
+                            <input class="category-radio" type='radio' name='post-category' id='post-all' value='post-all' checked/>
+                            <label for="post-all">all</label>
+                        </div>
+                        <div class="post-category">
+                            <input class="category-radio" type='radio' name='post-category' id='post-fashion' value='post-fashion'/>
+                            <label for="post-fashion">fashion</label>
+                        </div>
+                        <div class="post-category">
+                            <input class="category-radio" type='radio' name='post-category' id='post-mood' value='post-mood'/>
+                            <label for="post-mood">mood</label>
+                        </div>
+                        <div class="post-category">
+                            <input class="category-radio" type='radio' name='post-category' id='post-mood' value='post-mood'/>
+                            <label for="post-mood">story</label>
+                        </div>
+                    </div>
+                    
+                    <div class="post-sort-frame">
+                        <div class="text-wrapper-2">정렬기준</div>
+                        <div class="rectangle"></div>
+                        <select class="sort-select" name="sort-select">
+                            <option class="sort-by-text" id="default">최신순</option>
+                            <option class="sort-by-text" value="like">좋아요</option>
+                            <option class="sort-by-text" value="comment">댓글</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="post-list">
+                    <%for(let i = 0; i < posts.length; i++){%>
+                        <div class="post">
+                            <a href="/post/detail/<%= posts[i].post_id%>"><img class="post_img" src="<%= posts[i].image_url%>"/></a>
+                        </div>
+                    <%}%>
+                </div>
+                
+                <div class="post-paging">
+                    <div class="frame-5">
+                        <i class="fa-solid fa-angles-left" id="first_page"></i>
+                        <i class="fa-solid fa-angle-left" id="prev_page"></i>
+                        <div class="post-paging-pages">
+                        <span class="n">1</span>
+                        </div>
+                        <i class="fa-solid fa-angle-right" id="next_page"></i>
+                        <i class="fa-solid fa-angles-right" id="last_page"></i>
+                    </div>
+                </div>
+            </div>
+
+            <%- include('../home/foot.ejs') %>
+        </div>
+    </body>
+</html>
+
+<!-- <div class="frame-wrapper">
+    <div class="frame-3">
+        <div class="comment-frame">
+            <div class="rectangle-wrapper"><img class="img" src="img/rectangle-76.png" /></div>
+                <div class="comment">
+                    <div class="comment-nicanddate">
+                        <div class="div-wrapper"><div class="text-wrapper-4">user_id</div></div>
+                        <div class="date">
+                            <div class="text-wrapper-5">2주 전</div>
+                        </div>
+                    </div>
+                    <div class="comment-text"><div class="text-wrapper-6">post text</div></div>
+                </div>
+            </div>
+            <div class="likeandcomment-wrapper">
+                <div class="likeandcomment">
+                    <div class="frame-2">
+                        <img class="img-2" src="img/black.png" />
+                        <div class="text-wrapper-7">0</div>
+                    </div>
+                    <div class="frame-2">
+                        <img class="img-2" src="img/comment-icon.png" />
+                        <div class="text-wrapper-7">0</div>
+                    </div>
+                    <div class="frame-2">
+                    <img class="img-2" src="img/tag.png" />
+                        <div class="text-wrapper-7">0</div>
+                    </div>
+                    <div class="frame-2">
+                        <img class="img-2" src="img/share-icon.png" />
+                    <div class="text-wrapper-7">0</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->

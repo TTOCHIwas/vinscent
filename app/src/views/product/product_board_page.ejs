@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="/stylesheets/globals.css" />
+        <link rel="stylesheet" href="/stylesheets/styleguide.css" />
+        <link rel="stylesheet" href="/stylesheets/product-board-page.css" />
+    </head>
+    <body>
+        <div clase="product-board-page">
+            <%- include('../gnb/gnb.ejs') %>
+            <div class="product-board-page-frame">
+                <div class="product-title-wrapper"><div class="product-title">PRODUCTS</div></div>
+                <div class="product-category-and-sortby">
+                    <div class="product-category-list">
+                        <div class="product-category">
+                            <input class="category-radio" type='radio' name='product-category' id='product-all' value='product-all' checked="checked"/>
+                            <label for="product-all">all</label>
+                        </div>
+                        <div class="product-category">
+                            <input class="category-radio" type='radio' name='product-category' id='product-fashion' value='product-fashion'/>
+                            <label for="product-fashion">fashion</label>
+                        </div>
+                        <div class="product-category">
+                            <input class="category-radio" type='radio' name='product-category' id='product-mood' value='product-mood'/>
+                            <label for="product-mood">mood</label>
+                        </div>
+                        <div class="product-category">
+                            <input class="category-radio" type='radio' name='product-category' id='product-unique' value='product-unique'/>
+                            <label for="product-unique">unique</label>
+                        </div>
+                        <div class="product-category">
+                            <input class="category-radio" type='radio' name='product-category' id='product-brand' value='product-brand'/>
+                            <label for="product-brand">brand</label>
+                        </div>
+                    </div>
+                    <!-- <div class="list-filter">
+                        <div class="text-wrapper-2">정렬기준</div>
+                        <div class="rectangle"></div>
+                        <select class="frame-2">
+                            <option class="sort-by-text">좋아요</option>
+                            <option class="sort-by-text">좋아요</option>
+                            <option class="sort-by-text">좋아요</option>
+                        </select>
+                    </div> -->
+                </div>
+                <div class="product-list">
+                    <a class="product" href="/product/detail">
+                        <img class="product-img" src="https://i.pinimg.com/736x/21/12/26/211226a1c1f2c92446250539aad35ffe.jpg" />
+                        <div class="product-info-container">
+                            <p class="product-name">제품명</p>
+                            <p class="product-brand">브랜드</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-paging">
+                    <div class="frame-5">
+                        <i class="fa-solid fa-angles-left" id="first_page"></i>
+                        <i class="fa-solid fa-angle-left" id="prev_page"></i>
+                        <div class="product-paging-pages">
+                        <span class="n">1</span>
+                        </div>
+                        <i class="fa-solid fa-angle-right" id="next_page"></i>
+                        <i class="fa-solid fa-angles-right" id="last_page"></i>
+                    </div>
+                </div>
+            </div>
+
+            <%- include('../home/foot.ejs') %>
+        </div>
+    </body>
+</html>

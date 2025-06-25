@@ -1,9 +1,99 @@
-const db = require('../database.js');
+const db = require('../../database.js');
 
-exports.getPosts = (callback) => {
-    db.query("SELECT * FROM user", (err, rows) => {
+exports.getPosts = async () => {
+    try{
+        const [rows] = await db.query('SELECT p.post_id, i.image_url FROM post p LEFT JOIN post_image i ON p.post_id = i.post_id AND i.image_index = 0 WHERE p.magazine = 0 GROUP BY p.post_id, i.image_url ORDER BY p.post_created_date DESC;');
+        if(rows.length == 0)
+        {
+            throw new Error('데이터가 없음');
+        }
+        return rows;
+    }catch(err){
+        console.error('[getPost] Error:', err.message);
+        return null;
+    }
+  };
+
+exports.getPostsCategory = async (category) => {
+    try{
+        const [rows] = await db.query(`SELECT p.post_id, i.image_url FROM post p LEFT JOIN post_image i ON p.post_id = i.post_id AND i.image_index = 0 WHERE p.magazine = 0 AND p.category_id='${category}' GROUP BY p.post_id, i.image_url ORDER BY p.post_created_date DESC;`);
+        if(rows.length == 0)
+        {
+            throw new Error('데이터가 없음');
+        }
+        return rows;
+    }catch(err){
+        console.error('[getPostsCategory] Error:', err.message);
+        return null;
+    }
+};
+
+
+exports.getPostsCategoryOrderByLike = async (category) => {
+    try{
+        const [rows] = await db.query(`SELECT p.post_id, COALESCE(COUNT(pl.like_id), 0) AS like_count,i.image_url FROM post p LEFT JOIN like_post pl ON p.post_id = pl.post_id LEFT JOIN post_image i ON p.post_id = i.post_id AND i.image_index = 0 WHERE p.magazine = 0 AND p.category_id='${category}' GROUP BY p.post_id, i.image_url ORDER BY like_count DESC;`);
+        if(rows.length == 0)
+        {
+            throw new Error('데이터가 없음');
+        }
+        return rows;
+    }catch(err){
+        console.error('[getPostsCategoryOrderByLike] Error:', err.message);
+        return null;
+    }
+};
+
+exports.getPostsCategoryOrderByComment = async () => {
+    try{
+        const [rows] = await db.query(`SELECT p.post_id, p.post_title, COALESCE(COUNT(co.comment_id), 0) AS comment_count,i.image_url FROM post p LEFT JOIN comment co ON p.post_id = co.post_id LEFT JOIN post_image i ON p.post_id = i.post_id AND i.image_index = 0 WHERE p.magazine = 0 GROUP BY p.post_id, i.image_url ORDER BY comment_count DESC;`);
+        if(rows.length == 0)
+        {
+            throw new Error('데이터가 없음');
+        }
+        return rows;
+    }catch(err){
+        console.error('[getPostsCategoryOrderByComment] Error:', err.message);
+        return null;
+    }
+};
+
+exports.getPostsOrderByLike = (callback) => {
+    db.query("SELECT p.post_id, p.post_title, COALESCE(COUNT(pl.like_id), 0) AS like_count,i.image_url FROM post p LEFT JOIN like_post pl ON p.post_id = pl.post_id LEFT JOIN post_image i ON p.post_id = i.post_id AND i.image_index = 0 WHERE p.magazine = 0 GROUP BY p.post_id, i.image_url ORDER BY like_count DESC;", (err, rows) => {
         try{
-            console.log("게시글 목록: ", rows);
+            console.log("게시글 좋아요순 목록: ", rows);
+            callback(rows);
+        }catch(err){
+            throw err;
+        }
+    });
+};
+
+exports.getPostsOrderByLike = (callback) => {
+    db.query("SELECT p.post_id, p.post_title, COALESCE(COUNT(pl.like_id), 0) AS like_count,i.image_url FROM post p LEFT JOIN like_post pl ON p.post_id = pl.post_id LEFT JOIN post_image i ON p.post_id = i.post_id AND i.image_index = 0 WHERE p.magazine = 0 GROUP BY p.post_id, i.image_url ORDER BY like_count DESC;", (err, rows) => {
+        try{
+            console.log("게시글 좋아요순 목록: ", rows);
+            callback(rows);
+        }catch(err){
+            throw err;
+        }
+    });
+};
+
+exports.getMagazines = (callback) => {
+    db.query("SELECT p.post_id, i.image_url FROM post p LEFT JOIN post_image i ON p.post_id = i.post_id AND i.image_index = 0 WHERE p.magazine = 1 GROUP BY p.post_id, i.image_url ORDER BY p.post_created_date DESC;", (err, rows) => {
+        try{
+            console.log("메거진 목록: ", rows);
+            callback(rows);
+        }catch(err){
+            throw err;
+        }
+    });
+};
+
+exports.getImage = (postId, callback) => {
+    db.query(`SELECT PI.image_url, PI.image_index FROM post_image AS PI JOIN post AS P ON PI.post_id=P.post_id WHERE PI.post_id=${postId};`, (err, rows) => {
+        try{
+            console.log("게시글 사진 목록: ", rows);
             callback(rows);
         }catch(err){
             throw err;
@@ -12,7 +102,7 @@ exports.getPosts = (callback) => {
 };
 
 exports.getPostsByUser = (userId, callback) => {
-    db.query(`SELECT * FROM post WHERE user_id=${userId}`, (err, rows) => {
+    db.query(`SELECT p.post_id, i.image_url FROM post p LEFT JOIN post_image i ON p.post_id = i.post_id AND i.image_index = 0 WHERE p.magazine = 0 AND p.user_id = ${userId} GROUP BY p.post_id, i.image_url ORDER BY p.post_created_date DESC;`, (err, rows) => {
         try{
             console.log("회원 게시글 목록 : ", rows);
             callback(rows);
@@ -22,10 +112,9 @@ exports.getPostsByUser = (userId, callback) => {
     });
 };
 
-exports.getPostsByLike = (userId, callback) => {
-    db.query(`SELECT * FROM like_post AS LP JOIN post AS P ON LP.post_id=P.post_id WHERE LP.user_id=${userId}`, (err, rows) => {
+exports.getUserPostsByLike = (userId, callback) => {
+    db.query(`SELECT p.post_id, p.post_title, COALESCE(COUNT(pl.like_id), 0) AS like_count,i.image_url FROM post p LEFT JOIN like_post pl ON p.post_id = pl.post_id LEFT JOIN post_image i ON p.post_id = i.post_id AND i.image_index = 0 WHERE p.magazine = 0 AND p.user_id=${userId} GROUP BY p.post_id, i.image_url ORDER BY like_count DESC;`, (err, rows) => {
         try{
-            console.log("회원 좋아요 게시글 목록 : ", rows);
             callback(rows);
         }catch(err){
             throw err;
@@ -36,7 +125,6 @@ exports.getPostsByLike = (userId, callback) => {
 exports.getPostsByProduct = (productId, callback) => {
     db.query(`SELECT * FROM tag_product AS T JOIN post AS P ON T.post_id=P.post_id WHERE T.product_id='${productId}'`, (err, rows) => {
         try{
-            console.log("게시글 목록 : ", rows);
             callback(rows);
         }catch(err){
             throw err;
@@ -88,16 +176,20 @@ exports.getMagazines = (callback) => {
     });
 };
 
-exports.getPost = (postId, callback) => {
-    db.query(`SELECT * FROM post WHERE post_id=${postId}`, (err, rows) => {
-        try{
-            console.log("게시글 정보 : ", rows);
-            callback(rows[0]);
-        }catch(err){
-            throw err;
+exports.getPost = async (postId) => {
+    try{
+        const [rows] = await db.query(`SELECT * FROM post WHERE post_id="${postId}"`);
+        if(rows.length == 0)
+        {
+            throw new Error('데이터가 없음');
         }
-    });
-};
+        console.log("게시글 정보: ", rows);
+        return rows;
+    }catch(err){
+        console.error('[getPost] Error:', err.message);
+        return null;
+    }
+  };
 
 
 exports.postPost = (data, callback) => {

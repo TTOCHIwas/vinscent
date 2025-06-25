@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="/stylesheets/styleguide.css" />
+        <link rel="stylesheet" href="/stylesheets/globals.css" />
+        <link rel="stylesheet" href="/stylesheets/sign-page.css" />
+    </head>
+    <body>
+        <%- include('../gnb/gnb.ejs') %>
+        <div class="sign-page-frame">
+            <form class="sign-page" action="/auth/login" method="post">
+                <div class="logo">
+                    <p class="logo-text">Vinscent</p>
+                    <p class="slogan">blending scents, sharing stories :<br />the art of finding your fragrance</p>
+                </div>
+
+                <p class="sign-text">로그인</p>
+                <input class="enter-frame" name="username" type="text" placeholder="아이디(이메일)">
+                <input class="enter-frame" name="passowrd" type="password" placeholder="비밀번호">
+
+                <div class="text-frame">
+                    <div>
+                        <input class="checkbox" type="checkbox" id="auto_sign" name="auto_sign"/>
+                        <label class="text-wrapper-3" for="auto_sign">자동 로그인</label>
+                    </div>
+                    <div class="sign-menu-auto">
+                        <a class="request-button" href="">아이디찾기</a>
+                        <a class="request-button" href="">비밀번호찾기</a>
+                        <a class="request-button" href="/auth/signup">회원가입</a>
+                    </div>
+                </div>
+                    
+                <button class="sign-button" type="submit" value="Log_In"><div class="text-wrapper-4">로그인</div></button>
+                <!-- <button class="sign-button-kakao" href=""><div class="text-wrapper-5">카카오 로그인</div></button>
+                <button class="sign-button-naver" href=""><div class="text-wrapper-4">네이버 로그인</div></button>
+                <button class="sign-button-google" href=""><div class="text-wrapper-5">구글 로그인</div></button> -->
+            </form>
+        </div>
+        <%- include('../home/foot.ejs') %>
+    </body>
+</html>

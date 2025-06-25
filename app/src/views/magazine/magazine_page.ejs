@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="/stylesheets/globals.css" />
+        <link rel="stylesheet" href="/stylesheets/styleguide.css" />
+        <link rel="stylesheet" href="/stylesheets/magazine-board-page.css" />
+    </head>
+    <body>
+        <div clase="magazine-board-page">
+            <%- include('../gnb/gnb.ejs') %>
+            <div class="magazine-board-page-frame">
+                <div class="magazine-title-wrapper"><div class="magazine-board-page-title">MAGAZINE</div></div>
+                <div class="magazine-list">
+                    <a class="magazine" href="/magazine/detail">
+                        <div class="magazine-image-container">
+                            <img class="magazine-image" src="https://i.pinimg.com/736x/0e/13/00/0e1300691c27edde0274d26b911f821d.jpg" />
+                        </div>
+                        <div class="magazine-contents">
+                            <div class="magazine-brand-and-date">
+                                <p class="magazine-title">title</p>
+                                <p class="magazine-date">2주 전</p>
+                            </div>
+                            <p class="magazine-brand-text">brand name</p>
+                            <p class="magazine-content-text">news</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="magazine-paging">
+                    <div class="frame-5">
+                        <i class="fa-solid fa-angles-left" id="first_page"></i>
+                        <i class="fa-solid fa-angle-left" id="prev_page"></i>
+                        <div class="magazine-paging-pages">
+                        <p class="n">1</p>
+                        </div>
+                        <i class="fa-solid fa-angle-right" id="next_page"></i>
+                        <i class="fa-solid fa-angles-right" id="last_page"></i>
+                    </div>
+                </div>
+            </div>
+
+            <%- include('../home/foot.ejs') %>
+        </div>
+    </body>
+</html>
