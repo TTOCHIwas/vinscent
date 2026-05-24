@@ -42,7 +42,6 @@ app.set('view engine', 'ejs');
 app.use('/', home);
 app.use('/auth', auth);
 app.use('/post', post);
-app.use('/product', product);
-app.use('/magazine', magazine);
+
 
 module.exports = app;
